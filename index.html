@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="home">
+        <img class="logo" src="src/Imagens/foto-perfil.JPG" href="#home">
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav_link">
+                <li><a href="#home">Sobre</a></li>
+                <li><a href="#sobre">Contato</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sobre">
+        <div class="foto">
+            <img src="src/Imagens/foto-perfil.JPG">
+            <div class="glow-wrap">
+                <i class="glow"></i>
+            </div>
+        </div>
+
+        <div class="text-box">
+            <h1>Eu sou <span class="auto-input"></span></h1>
+            <p>Meu nome é William, mas pode me chamar de Will. Formado em Ciência da Computação, comecei a programar em 2019, porém só em meados de 2021 fui “apresentado” ao Front-End e acabei me apaixonando!</p>
+        </div>
+    </div>
+
+
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["o William", "Programador", ""],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
