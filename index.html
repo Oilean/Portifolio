@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/Imagens/cup-of-drink.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/carrossel.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header id="home">
-        <img class="logo" src="src/Imagens/foto-perfil.JPG" href="#home">
+        <img class="logo" src="src/Imagens/gambiarra.png" href="#home">
         <nav>
-            <div class="mobile-menu">
+            <!-- <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </div> -->
             <ul class="nav_link">
                 <li><a href="#home">Sobre</a></li>
                 <li><a href="#sobre">Contato</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#projetos-container">Projetos</a></li>
             </ul>
         </nav>
     </header>
@@ -34,23 +36,92 @@
             </div>
         </div>
 
-        <div class="text-box">
-            <h1>Eu sou <span class="auto-input"></span></h1>
-            <p>Meu nome é William, mas pode me chamar de Will. Formado em Ciência da Computação, comecei a programar em 2019, porém só em meados de 2021 fui “apresentado” ao Front-End e acabei me apaixonando!</p>
+        <div class="sobre">
+            <h1>William Santos</h1>
+            <ul class="about">
+                <li><a><img src="src/Imagens/cup-of-drink.png">Dev Front-End & UI Designer</a></li>
+                <li><a><img src="src/Imagens/link.png">(Em breve)</a></li>
+                <li><a href="https://github.com/Oilean"><img src="src/Imagens/github.png">Oilean</a></li>
+                <li><a><img src="src/Imagens/maps-and-location.png">São Bernardo do Campo, Brasil</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="projetos-container">
+        <h2>Meus Projetos</h2>
+    </div>
+        <div class="projetos">
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Login Page</h3>
+                        <p>Tela de login basica em HTML/CSS</p>
+                        <a href="https://oilean.github.io/loginPage/">Acesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Calculadora</h3>
+                        <p>Uma calculadora em HTML/CSS/JS</p>
+                        <a href="https://oilean.github.io/Calculadora/">Acesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Cards Pokemon</h3>
+                        <p>Alguns cards de Pokemon em HTML/CSS/JS</p>
+                        <a href="https://oilean.github.io/CardsPokemon/">Acesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>04</h2>
+                        <h3>Clima</h3>
+                        <p>Projeto desenvoldido em Java com uma API de climas</p>
+                        <a href="https://github.com/Oilean/ClimaAPI">Acesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>05</h2>
+                        <h3>Relógio</h3>
+                        <p>Um relógio simples em HTML/CSS/JS</p>
+                        <a href="https://oilean.github.io/relogio/">Acesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>06</h2>
+                        <h3>Mais projetos</h3>
+                        <p>Para mais projetos clique aqui!</p>
+                        <a href="https://github.com/Oilean">Acesse</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <script src="src/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-input", {
-            strings: ["o William", "Programador", ""],
-            typeSpeed: 75,
-            backSpeed: 75,
-            loop: true
-        })
-    </script>
 </body>
 
 </html>

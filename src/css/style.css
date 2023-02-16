@@ -13,6 +13,7 @@ li, a {
     font-size: 18px;
     color: #e0e0e0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 #home {
@@ -20,14 +21,13 @@ li, a {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: #222;
 }
 
 .logo {
     width: 100px;
     cursor: pointer;
     margin-right: auto;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .nav_link {
@@ -45,6 +45,7 @@ li, a {
     transition: all 0.3s ease 0s;
 }
 
+
 .nav_link li a:hover {
     color: #424549;
 }
@@ -53,37 +54,58 @@ li, a {
 #sobre{
     padding: 10px 5%;
     margin-top: 62px;
+    margin-right: 150px;
+    margin-left: 150px;
     display: flex;
 }
 
-.foto{
-    width: 599px;
-    height: 580px;
-}
-
 .foto img{
-    width: 599px;
-    border-radius: 20px;
+    margin-top: 100px;
+    width: 399px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #86BCE8;
 }
 
-.text-box{
-    color: #e0e0e0;
-    margin-top: 180px;
-    margin-left: 283px;
+.sobre{
+    padding: 10px;
+    margin-top: 125px;
+    margin-left: 30%;
 }
 
-.text-box span{
-    color: #1435C5;
+.sobre img{
+    width: 18px;
+    height: 20px;
+    filter: invert(75%) sepia(41%) saturate(668%) hue-rotate(178deg) brightness(93%) contrast(96%);
+    margin-right: 15px;
 }
 
-.text-box h1{
+.sobre h1{
+    color: #86BCE8;
     font-size: 54px;
+    margin-right: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
-.text-box p{
-    margin-top: 85px;
-    font-size: 30px;
-    text-align: justify;
+.sobre ul{
+    margin-top: 48px;
 }
 
-  
+.sobre li{
+    margin-top: 24px;
+}
+
+.sobre a{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+.sobre a:hover {
+    color: #86BCE8;
+}
+
+
+body .container .card:nth-child(2) .box .content a {
