@@ -6,6 +6,7 @@
 
 body{
     background-color: #222;
+    transition: all 0.3s ease 0s;
 }
 
 li, a {
@@ -18,16 +19,10 @@ li, a {
 
 #home {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px 5%;
-}
-
-.logo {
-    width: 100px;
-    cursor: pointer;
-    margin-right: auto;
-    border-radius: 50%;
+    margin-top: 40px;
 }
 
 .nav_link {
@@ -69,7 +64,7 @@ li, a {
 
 .sobre{
     padding: 10px;
-    margin-top: 125px;
+    margin-top: 140px;
     margin-left: 30%;
 }
 
@@ -107,5 +102,84 @@ li, a {
     color: #86BCE8;
 }
 
+#footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  @media (min-width: 500px) {
+    #footer  ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  #footer  a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  #footer  a:hover {
+    color: #86BCE8;
+    transition: all 0.3s ease 0s;
+  }
+  
+  #footer  li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  #footer  li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  /* below is just for demo styling */
+  
+  #footer  {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+  }
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
 
-body .container .card:nth-child(2) .box .content a {
+  .cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .btn--download {
+    padding: 16px 32px;
+    font-size: 16px;
+    z-index: 100;
+    box-shadow: 0 6px 23px rgba(0,0,0,0, 0.45);
+    background: #86BCE8;
+    border-radius: 50px;
+  }
+
+  .btn--download:hover {
+    transform: scale(1.15);
+    transition: all 0.3s ease 0s;
+  }
+
+  .u-bolder{
+    font-weight: 700;
+  }
